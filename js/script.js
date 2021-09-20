@@ -14,29 +14,31 @@ project 1 - A Random Quote Generator
 
 let quotes = [
   {
-    quote: 'The greatest glory in living lies not in never failing, but in rising every time we fall',
-    source: 'Nelson Mandela',
-    citation: 'https://blog.hubspot.com/sales/famous-quotes'
+    quote: 'Carpe diem. Seize the day, boys. Make your lives extraordinary.',
+    source: 'Robin Williams',
+    citation: 'Dead Poets Society',
+    year: 1989
   },
   {
-    quote: 'What you do makes a difference, and you have to decide what kind of difference you want to make.',
-    source: 'Jane Goodall',
-    citation: 'https://www.snhu.edu/about-us/newsroom/education/personal-growth-quotes'
+    quote: 'It is not our abilities that show what we truly are... it is our choices.',
+    source: 'Albus Dumbledore',
+    citation: 'Harry Potter and the Chamber of Secrets',
+    year: 1998
   },
   {
-    quote: 'If there is no struggle, there is no progress.',
-    source: 'Frederick Douglass',
-    citation: 'https://www.snhu.edu/about-us/newsroom/education/personal-growth-quotes'
+    quote: "Home isn't where you land; home is where you launch. You can't pick your home any more than you can choose your family.",
+    source: 'Tayari Jones',
+    citation: 'An American Marriage'
   },
   {
-    quote: "I've got a theory that if you give 100% all the time, somehow things will work out in the end.",
-    source: 'Larry Bird',
-    citation: 'https://www.snhu.edu/about-us/newsroom/education/personal-growth-quotes'
+    quote: "To choose doubt as a philosophy of life is akin to choosing immobility as a means of transportation.",
+    source: 'Yann Martel',
+    citation: 'Life of Pi'
   },
   {
-    quote: "I've got a theory that if you give 100% all the time, somehow things will work out in the end.",
-    source: 'Larry Bird',
-    citation: 'https://www.snhu.edu/about-us/newsroom/education/personal-growth-quotes'
+    quote: "Enthusiasm makes up for a host of deficiencies.",
+    source: 'Barack Obama',
+    citation: 'A Promised Land'
   }
 ];
 
@@ -45,8 +47,8 @@ let quotes = [
 ***/
 
 function getRandomQuote () {
-  let randomQuote = '';
-  randomQuote += quotes[Math.floor(Math.random() * 4) + 1].quote;
+  let randomQuote;
+  randomQuote += quotes[Math.floor(Math.random() * 4) + 1];
   return randomQuote;
 }
 
@@ -55,7 +57,18 @@ function getRandomQuote () {
  * `printQuote` function
 ***/
 
+function printQuote() {
+  let randomQuote = getRandomQuote();
+  let html = `<p class="quote"> ${randomQuote.quote} </p>
+  <p class="source"> ${randomQuote.source}
+    <span class="citation"> ${randomQuote.citation} </span>
+    <span class="year"> ${randomQuote.year} </span>
+  </p>`;
+  if (quotes.citation) {
 
+  }
+
+}
 
 /***
  * click event listener for the print quote button
