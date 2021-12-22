@@ -43,7 +43,7 @@ let quotes = [
     version: "ESV"
   },
   {
-    quote: "he saved us, not beacuse of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit,",
+    quote: "he saved us, not because of works done by us in righteousness, but according to his own mercy, by the washing of regeneration and renewal of the Holy Spirit,",
     book: "Titus",
     verse: "3:5",
     version: "ESV"
