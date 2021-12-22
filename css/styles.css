@@ -89,7 +89,7 @@ h1 {
   position: absolute;
 }
 
-.source {
+.book {
   font-size: 1rem;
   letter-spacing: 0.05em;
   line-height: 1.1;
@@ -97,21 +97,19 @@ h1 {
   margin-right: 4em;
 }
 
-.source:before {
+.book:before {
   content: "—";
 }
 
-.citation {
+.verse {
   font-style: italic;
 }
 
-.citation:before {
-  content: ", ";
+.verse:before {
   font-style: normal;
 }
 
-.year:before {
-  content: ", ";
+.version:before {
   font-style: normal;
 }
 
@@ -160,7 +158,7 @@ h1 {
     bottom: 0.1em;
   }
 
-  .source {
+  .book {
     font-size: 1.25rem;
   }
 }
