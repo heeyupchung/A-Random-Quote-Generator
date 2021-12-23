@@ -61,9 +61,27 @@ let quotes = [
     version: "ESV"
   },
   {
-    quote: "Hear, O Israel: The LORD our God, the LORD is one. You shall love the LORD your God with all your heart and with all your soul and with all your might.",
-    book: "Deuteronomy",
-    verse: "6:4-5",
+    quote: "For even the Son of Man came not to be served but to serve, and to give his life as a ransom for many.",
+    book: "Mark",
+    verse: "10:45",
+    version: "ESV"
+  },
+  {
+    quote: "Be kind to one another, tenderhearted, forgiving one another, as God in Christ Jesus forgave you.",
+    book: "Ephesians",
+    verse: "4:32",
+    version: "ESV"
+  },
+  {
+    quote: "And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.",
+    book: "Colossians",
+    verse: "3:17",
+    version: "ESV"
+  },
+  {
+    quote: "Know this, my beloved brothers; let every person be quick to hear, slow to speak, slow to anger; for the anger of man does not produce the righteousness of God.",
+    book: "James",
+    verse: "1:19",
     version: "ESV"
   }
 ];
