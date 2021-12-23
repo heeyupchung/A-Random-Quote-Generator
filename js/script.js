@@ -86,8 +86,7 @@ let quotes = [
   }
 ];
 
-
-//gets a random quote from the array of objects, quotes
+// gets a random quote from the array of objects, quotes
 function getRandomQuote() {
   let randomQuote;
   randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -123,8 +122,7 @@ function randomBgColor() {
   document.body.style.backgroundColor = bgColor;
 }
 
-//prints a new random quote every 7 seconds
+// prints a new random quote every 7 seconds
 setInterval(printQuote, 7000);
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
-
