@@ -1,2 +1,2 @@
-# A Random Quote Generator
+# Bible Verse Generator
  
