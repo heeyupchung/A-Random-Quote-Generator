@@ -15,7 +15,7 @@ let quotes = [
   {
     quote: "The LORD is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He leads me in paths of righteousness for his name's sake.",
     book: "Psalm",
-    verse: "4:12-13",
+    verse: "23:1-3",
     version: "ESV"
   },
   {
@@ -109,7 +109,11 @@ function printQuote() {
 
   html += `</p>`;
   randomBgColor();
-  document.getElementById('quote-box').innerHTML = html; 
+  if(document.getElementById('quote-box').innerHTML === html) {
+    printQuote();
+  } else {
+    document.getElementById('quote-box').innerHTML = html;
+  }
   return html;
 }
 
@@ -123,6 +127,13 @@ function randomBgColor() {
 }
 
 // prints a new random quote every 7 seconds
-setInterval(printQuote, 7000);
+let myTimer = setInterval(printQuote, 7000);
+
+// resets timer if button is clicked
+const clearAndSet = () => {
+  clearInterval(myTimer);
+  myTimer = setInterval(printQuote, 7000);
+}
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load-quote').addEventListener("click", clearAndSet, false);
